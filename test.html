@@ -1,0 +1,99 @@
+<!-- REPETITIVOS
+si apreto ! me rellena lo predeterminado automaticamente, head, body, html, SOLO FUNCIONA CON HTML -->
+
+<!DOCTYPE html>           <!-- El propósito del tipo de documento es decirle al navegador qué versión de HTML debe usar para representar el documento.  -->
+
+<html lang="es" >         <!-- lang es lenguaje, especifica el lang para mayor accesibilidad -->
+    <head>
+        <meta charset="utf-8">           
+        <!-- le estoy indicando al navegador el tipo de codificación que debe utilizar para representar la información de forma correcta y que todo se vea bien. -->
+        <!-- Configurar la codificación es muy importante porque garantiza que la página web muestre símbolos y caracteres especiales de diferentes idiomas correctamente en el navegador. -->
+        
+        <title> my first website</title>
+
+        <!-- ACA RELACIONAMOS EL ARCHIVO CSS, para eso ponemos rel (relacionnship) y el archivo de referencia -->       
+        <link rel="stylesheet" href="test.css">
+        <!-- SI QUIERO AGREGAR UNA FUENTE DESDE LA COMPUTADORA USO ESTE ARCHIVO CSS -->
+        <!-- <link rel="stylesheet" href="test-font.css"> -->
+      
+    </head>
+
+
+
+    <body>
+       
+        <h1 >esto es el encabezado mas importante</h1>
+            <p>los parrafos se escribe con la etiqueta p  </p>
+            <p>esto es un <sub> subindice</sub> y estoy es un <sup>superindice</sup> </p>
+            <p>
+                  <strong>asi se pone la letra en negrita</strong></p> 
+                <p> <b>esta es otra forma de poner negrita, leer comentario </b></p> 
+            <!-- la etiqueta b no es recomendable xq no agrega importancia, strong si -->
+                  <p><em>y asi se pone cursiva </em> </p>
+                 <p><i>y esta es otra forma,leer comentario </i></p>
+                 <!-- la etiqueta i no es recomendable xq agrega importancia, em si -->
+                 <p>para redirigir a un sitio web <a href="https://www.google.com"> aprieta aqui para google </a> 
+                    y por <a href="hola.html"> aqui </a>  para ir a un archivo </p> </p>
+                <p>y aqui esta la letra sin negrita ni cursiva jeje </p>
+                <p>esta es una manera de <mark>RESALTAR</mark> una palabra </p>
+       
+        <h2>este es el encabezado menos importante </h2>
+              <p> a continuacion ingresamos esta imagen desde el navegador </p>
+    <!-- no es una imagen en si, es para ver que cuando pones alt "hola" te lo pone si se rompe la imagen  -->
+                  <img src="https://pixabay.com/es/images/search/url/" alt="que bonito">
+              <p>y esta desde la computadora, tenemos que poner todas las imgenes dentro de la carpeta donde esta esta extencion html </p>
+                    <img src="foto-prueba.jpg" alt= "foto de pexels">
+<!-- si la imagen esta dentro de una carpeta llamada "hola" seria img src "hola/foto-prueba.jpg" -->
+
+
+        <h3>encabezado menos importante y asi hasta el h6, aca se prueba div y span</h3>
+       
+        <p><div>hola vamos a hacer un texto largo. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+        </div></p>
+       
+        <p><div class="lorem">hola vamos a hacer un texto largo.</div> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+        </p>
+        
+        <p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </span> 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        
+        <p><span class="lorem2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        </span> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        <span class="lorem2">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </span> </p>
+
+        <!-- HTML LIST -->
+       
+        <ol>                     <!--  para listas con numeros-->
+            <li>hola je </li>  <!-- enumeracion y sangria automatica -->
+            <li>hola je </li>
+            <li>hola je </li>
+            <li>hola je </li>
+            <li>hola je </li>
+        </ol>
+        
+        <ul>                     <!--  para listas con punto, sin orden-->
+            <li>hola je </li>     <!-- enumeracion y sangria automatica -->
+            <li>hola je </li>
+            <li>hola je </li>
+            <li>hola je </li>                   
+        </ul>
+        
+        <!--FLOATS AND CLEARS  -->
+    <div class="red-box">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+        </p>
+    </div>
+        
+    <div class="blue-box">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+        </p>
+    </div>
+
+    </body>
+
+
+</html>
