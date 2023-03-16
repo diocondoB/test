@@ -1,0 +1,134 @@
+/*ANTES DE EMPEZAR TENER EN CUENTA QUE EL ORDEN DE LAS COSAS ES IMPORTANTE YA QUE 
+LO DE MAS ABAJO REESCRIBE SOBRE LO DE MAS ARRIBA 
+POR EJEMPLO: PONGO CODIGO DE CUADRO VERDE Y ABAJO PONGO CODIGO PARA UN LADO AZUL, VA A SALIR TODO VERDE Y UN LADO AZUL. 
+PERO SI PONGO EL CODIGO DE LADO AZUL Y ABAJO EL CODIGO DE TODO VERDE, NO ME VA A MOSTRAR EL LADO AZUL*/
+
+
+
+body {
+    background-color: beige;
+    color: black;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1,h2,h3 {
+    color: plum;
+    font-size: 50px; 
+}
+
+/* DIV and SPAN */
+/*div es para bloques de contenido y span para frases que elija */
+/* se debe poner en el codigo html y aqui cambiar color y etc */
+/* si pongo div en el codigo html en una frase, me la marca como punto y aparte o titulo
+por otro lado, si le pongo "class" al div, span, p, etc. en html es para seleccionar es frase o parrafo*/
+/* se puede usar "id" en vez de "class" pero "Id" debe ser utilizado una sola vez dentro de la página en 
+la que se está trabajando, mientras que "class" se puede repetir varias veces para diferentes elementos */
+div{
+    color: black ;
+    background: pink
+}
+
+/* el punto en CSS indica class */
+.lorem {
+    background: violet;
+}
+
+
+span {
+    color: black ;
+    background: pink;
+}
+
+.lorem2{
+    background: violet;
+}
+
+/* CSS BOX MODEL
+Margin (margen), border (bordes) and padding (rellenos) */
+
+.lorem{
+    width: 300px ; /* tamaño del texto */
+    margin: 100px;
+     /* para agregar img se puede usar ../carpeta/archivo ej actaulmente estoy en la carpeta css para volver atras pongo dos puntos y queda algo asi como  ../img/hamster.jpg*/
+     /* si la imagen se repite o quiero repetir pongo background-repeat: *elegir opciones*                                                                     */
+     background-image: url(../Prueba/foto-prueba.jpg);
+   
+    /* si pongo border y despues border left se ve, en viceversa no por que se reescribe */
+    border-left-width: 5px ; border-left-color: blue ;border-left-style: solid  ;
+    
+    /* no olvidar ninguno de los 3 elemntos, se puede resumir como border-left: 5px blue solid; siempre poner ; */
+    padding: 50px ; /* relleno del texto, se ve si hay relleno de color, si no se confunde con margin*/
+}
+ 
+/* TEMA FONTS
+si ponemos font-family: una font, otra font---- la coma indica que si no corre/lee la primera, que use la segunda */
+line-height: 40px  or 1; 1,25 ; 2  /* para separacion entre lineas conviene 1; 1,25; etc funcinona como el word */
+text-align: center, justify, right etc /* para alinear  */
+text-decoration: underline, none, etc /*para subrayar, tachar, etc*/
+text-transforms: uppercase (mayuscula); capitalize(solo la primer letra de la palabra es mayuscula); lowercase (minuscula) /* para poe exo en mayuscula,minuscula,etc*/
+
+
+
+/* para cambiar el color a los links pongo lo siguiente */
+a{color: green}
+
+/* TEMA LINKS STYLE (se pueden usar 2 a la vez)*/               
+a:link{color:aqua }                 /* para links que  no fueron visitados*/
+a:visited {color: gray}             /* para links que ya visite */     
+a:hover, a:focus { color: violet}   /* hover para links que al pasar con el ratón por encima de un elemento tome color/forma/etc */
+/* focus funciona como hover pero en vez de mouse usa tab en el teclado. se usa para accesibilidad de un ciego por ej.*/
+a:active{color: yellow}             /*selecciona un elemento activo( como cuando haces click y por un microsegundo se pone amarillo)*/
+
+/* el orden en que estan los links es el mejorcito para que se vea todo */
+ 
+/* HTML LIST */
+/* para enumerar un texto va a estar en el archivo html */
+
+ul{
+    list-style-type:disc ; /*por si quiero ponerle un punto, rectangulo,decimales(son numeros 1,2,3), lower es letras romanas, griegas,etc*/
+    /* list-style-image: url(foto-prueba.jpg)  para cuando quiera que tenga la imagen que yo diga en ez de puntos */
+    background-color: rgb(255, 176, 255);        /* AGREGA COLOR A LOS ICONOS NUMERADOS Y EL TEXTO*/
+}
+ol {
+    background-color: aqua;                      /*AGREGA COLOR AL TEXTO Y LOS SIMBOLOS NUMERADOS*/
+    
+    
+}
+ul li {
+    background-color: rgb(251, 60, 242);         /* AGREGA COLOR SOLO AL TEXTO*/
+    margin: 5px; 
+                                   /*AGREGA ESPACIADO ENTRE */
+}
+
+ol li {
+    background-color: rgb(25, 119, 220);         /* AGREGA COLOR SOLO AL TEXTO*/
+    margin: 5px;
+    list-style-position: inside;                  /*SI QUIERO QUE INCLUYA LOS SIMBOLOS*/
+}
+
+/* FLOATS AND CLEARS  (Flotantes y borradores(?))*/
+img {
+   float: left;                             /*sirve para acomodar la imagen a un lado*/
+    margin-right: 30px;
+    margin-bottom: 60px;
+}
+h3{
+    clear:both;                             /*es como apretar el enter asi no aparece el titulo al lado de la imagen*/
+}
+.blue-box{
+    weight: 100px;
+    /* height: 100px; */
+background-color: blue;
+float: left;
+
+}
+
+
+.red-box{
+weight:100px;
+
+background-color: red;
+float: right;
+
+}
