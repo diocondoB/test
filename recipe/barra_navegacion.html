@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Recetas de odin</title>
+    <link rel="stylesheet" href="barra_navegacion.css" />
+</head>
+
+<body>
+    <nav class="navbar container">
+        <a class="logo">RECETARIO ODIN</a>
+        <!-- input se usa para crear controles interactivos, puede ser type(button, checkbox,etc), accept, autocomplete,etc -->
+        <!-- checkbox es para crear casilla de seleccion(que el usuario pueda hacer click) se combina con label para mejor practica de accesibilidad -->
+        <input type="checkbox" id="toggler" />
+        <!-- label es etiqueta para interfaz de usuario, se usa con: for(un ID elemnent), acceskey(tecla de atajo), form(formulario) -->
+        <!-- la etiqueta <i> es para letra cursiva -->
+        <label for="toggler"><i class="ri-menu-line"></i></label>
+        <div class="menu">
+            <ul class="list">
+                <li><a href="#indice">inicio</a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="title-index">
+            <h1> BIENVENIDOS AL RECETARIO ODIN</h1>
+            <p class="text"> <br>"Te damos la bienvenida a nuestra página web de recetas, un espacio virtual creado para
+                inspirarte en la cocina y ayudarte a preparar deliciosas comidas para tus seres queridos. </br>
+                <br>Nuestra página cuenta con una amplia variedad de recetas para todos los gustos, desde platillos
+                clásicos hasta creaciones más modernas y destacadas. Todas nuestras recetas han sido cuidadosamente seleccionadas y
+                probadas para asegurarnos de que sean fáciles de preparar, saludables y sobre todo, deliciosas.</br>
+                
+            </p>
+        </div>
+
+        <div id="indice" class="title">
+            <p > INDICE </p>
+            <ul>
+                <li><a href=#receta1>Yogurt con granola </a></li>
+                <li><a href=#receta2>Ensalada Cesar </a></li>
+                <li><a href=#receta3>Pizza margarita </a></li>
+                <li><a href=#receta4>Galletas con chips de chocolate </a></li>
+            </ul>
+        </div>
+
+
+        <div id="receta1">
+            <p class="title"> YOGURT GRANOLA </p>
+            <img class="img"
+                src="https://www.allrecipes.com/thmb/CvRFrv-gA-pPqJoE4ocHwtQ4Ozs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/7644871-264b87deb8f2463e99a9bb6c141c3167.jpg"
+                alt="yogur con granola">
+            <p class="title"> INGREDIENTES</p>
+            <ul>
+                <li>1 cda yogurt tipo griego</li>
+                <li>1 cda cereales</li>
+                <li>1 cda mix de semillas</li>
+                <li>1 cda frutos secos </li>
+                <li>1 cda fruta de estacion </li>
+            </ul>
+            <p class="title"> PASOS A SEGUIR</p>
+            <Ol>
+                <li>pele y corte la fruta</li>
+                <li> coloque el yogurt en un bowl de preferencia</li>
+                <li>agregue la fruta </li>
+                <li>agregue los cereales, el mix de semillas y los frutos secos al yogurt</li>
+            </Ol>
+          
+        </div>
+
+
+        <div id="receta2">
+            <p class="title"> ENSALADA CESAR </p>
+            <img class="img"
+                src="https://www.recetasderechupete.com/wp-content/uploads/2020/10/Ensalada-Cesar-final_.jpg"
+                alt="Ensalada César">
+            <p class="title"> INGREDIENTES</p>
+            <ul>
+                <li>1 Lechuga romana</li>
+                <li>100gr de Pollo </li>
+                <li>100gr Crutones</li>
+                <li>100gr Queso parmesano</li>
+                <li>5cdas de Salsa César</li>
+            </ul>
+            <p class="title"> PASOS A SEGUIR</p>
+            <ol>
+                <li>Lavar y cortar la lechuga en trozos pequeños.</li>
+                <li>Cocinar las pechugas de pollo a la parrilla hasta que estén bien cocidas, y luego cortarlas en tiras
+                    delgadas.
+                </li>
+                <li>En un tazón grande, mezclar la lechuga, las tiras de pollo, los crutones y el queso parmesano.</li>
+                <li>Añadir la salsa César y mezclar bien.</li>
+                <li>Servir frío y disfrutar.</li>
+            </ol>
+          
+        </div>
+
+
+        <div id="receta3">
+            <p class="title"> PIZZA MARGARITA</p>
+            <img class="img"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBzpgFn9M0bpvtR2xCnVaOoN-neJ8Gqly17A&usqp=CAU"
+                alt="Pizza Margarita">
+            <p class="title"> INGREDIENTES</p>
+            <ul>
+                <li>Masa para pizza</li>
+                <li>Salsa de tomate</li>
+                <li>Mozzarella</li>
+                <li>Albahaca fresca</li>
+            </ul>
+            <p class="title"> PASOS A SEGUIR</p>
+            <ol>
+                <li>Preparar la masa de pizza según las instrucciones del paquete o usar una masa de pizza casera.</li>
+                <li>Extender la masa de pizza en una bandeja para hornear o en una piedra para pizza y precalentar el
+                    horno a 450
+                    grados F (230 grados C).</li>
+                <li>Esparcir la salsa de tomate sobre la masa de pizza.</li>
+                <li>Cubrir la salsa de tomate con el queso mozzarella rallado.</li>
+                <li>Hornear la pizza durante 12-15 minutos, o hasta que la masa esté dorada y el queso esté burbujeante.
+                </li>
+                <li>Retirar del horno y esparcir las hojas de albahaca fresca por encima.</li>
+                <li>Cortar en porciones y servir caliente.</li>
+            </ol>
+           
+        </div>
+
+        <div id="receta4">
+            <p class="title"> GALLETAS CON CHIPS DE CHOCOLATE</p>
+            <img class="img" src="https://cdn7.kiwilimon.com/recetaimagen/31079/35433.jpg" alt="Galletas de Chocolate">
+            <p class="ingredientes"> INGREDIENTES</p>
+            <ul>
+                <li>Harina</li>
+                <li>Azúcar</li>
+                <li>Huevos</li>
+                <li>Chocolate negro</li>
+                <li>Mantequilla</li>
+            </ul>
+            <p class="title"> PASOS A SEGUIR</p>
+            <ol>
+                <li>Calentar el horno a 180°C.</li>
+                <li>Mezclar la harina, el cacao en polvo, el bicarbonato de sodio y la sal en un tazón grande.</li>
+                <li>Batir la mantequilla y el azúcar en otro tazón hasta que la mezcla esté suave.</li>
+                <li>Añadir los huevos y el extracto de vainilla a la mezcla de mantequilla y batir hasta que estén bien
+                    combinados.
+                </li>
+                <li>Añadir la mezcla de harina a la mezcla de mantequilla y batir hasta que se forme una masa suave.
+                </li>
+                <li>Añadir las chispas de chocolate a la masa y mezclar bien.</li>
+                <li>Colocar cucharadas de masa en una bandeja para hornear cubierta con papel pergamino.</li>
+                <li>Hornear las galletas durante 12-15 minutos, o hasta que estén doradas por los bordes.</li>
+                <li>Dejar enfriar las galletas en la bandeja durante unos minutos antes de transferirlas a una rejilla
+                    para que se
+                    enfríen completamente.</li>
+            </ol>
+        
+        </div>
+        <p> PROYECTO CREADO POR </p>
+        <!-- <img class="odin" src="https://www.theodinproject.com/mstile-310x310.png" alt="logo odin project"></img> -->
+    </main>
+</body>
+
+</html>

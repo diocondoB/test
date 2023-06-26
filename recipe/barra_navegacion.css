@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Caprasimo&display=swap');
+
+/* para el texto usar belanosima, para el titulo usar caprasimo   */
+
+
+/* ESTILO DE LA PAGINA */
+/* el asterisco es para todos los elementos en el documento */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: x-large;
+}
+
+body {
+    font-family: 'Belanosima', sans-serif;
+    background-color: white;
+    margin: 10%;
+    border: 2px solid rgba(0, 0, 0, 0.326);
+    padding: 30px;
+    padding-top: 50px;
+
+}
+
+a:link,
+a:visited,
+a:active {
+    color: #eecf42
+}
+
+a:hover,
+a:focus {
+    color: #ffd000;
+}
+
+
+.title-index {
+    font-family: 'Caprasimo', sans-serif;
+    text-align: center;
+}
+
+#indice {
+    width: 55%;
+    height: 100%;
+    text-align: left;
+    margin: 10%;
+    background-color: #fffced;
+    border-right-width: 6px;
+    border-right-color: #eecf42;
+    border-right-style: solid;
+    padding: 3%;
+}
+
+.title {
+    background-color: #eecf42;
+    padding: 2%;
+
+}
+
+.text,
+ol,
+ul,
+li {
+    font-family: 'belanosima', sans-serif;
+    line-height: 20px;
+}
+
+.img {
+    width: 180px;
+    height: 180px;
+}
+
+
+/* ESTILO DE LA BARRA NAVEGADORA */
+.container {
+    /* barra de navegacion negra */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 15px;
+}
+
+.navbar {
+    /* barra de navegacion negra */
+    display: flex;
+    /*para hacer movibles los item de la barra */
+    flex-wrap: wrap;
+    /*con wrap los item se reparten, con nowrap los item se contraen para entrar en la misma linea*/
+    align-items: center;
+    justify-content: space-between;
+    /*space-between es que toma el espacio sobrante y distribuye los item de forma pareja*/
+    background-color: #eecf42;
+    /* color de la barra de navegacion */
+    padding: 15px;
+    box-shadow: 0 0 20px #9a7c12;
+    /*la sombra de abajo de la barra de navegacion*/
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    /*color de la font de la barra de navegacion*/
+}
+
+.logo {
+    margin-right: 50px;
+    /*si no agrego esto, los item inicio y receta salen en forma de lista desordenada*/
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    pointer-events: none;
+    /*no incluye un dispositivo apuntador*/
+    gap: 20px;
+    /*tamaño del espacio entre filas */
+}
+
+.list * {
+    transition: .2s;
+}
+
+.list:hover>* {
+    /*:hover se usa para que el usuario interactue con un elemento señalado(paso el cursor por el item) pero no necesariamente lo activa*/
+    opacity: 0.3;
+    /*si paso el cursor por inicio me opaca receta, importante el pointer-event de .list*/
+}
+
+.list>* {
+    /*el piquito A > B indica anidador hijo, significa que los parrafos B se encuentran dentro de A, solo toma parrafos de A */
+    pointer-events: auto;
+
+}
+
+.list:hover>*:hover {
+    opacity: 1;
+    /*para que opaque uno solo, aunuqe si pones 0,3 se opacan los dos, si pones 2 igual se opaca 1 */
+}
+
+#toggler,
+.navbar label {
+    display: none;
+    color: #fff;
+    /*color de las 3 barras cuando la pantalla es pequeña y no entra inicio y receta*/
+}
